@@ -3,8 +3,8 @@ pipeline {
     environment {
         JAVA_HOME = 'C:\\Program Files\\Java\\jdk-17'
         PYTHON_HOME = 'C:\\Users\\rehou\\AppData\\Local\\Microsoft\\WindowsApps'
-        MAVEN_HOME = 'C:\\Users\\Haythem\\Documents\\apache-maven-3.9.0\\bin'
-        PATH = "${env.PATH};${JAVA_HOME}\\bin;${PYTHON_HOME};${MAVEN_HOME}"
+        MAVEN_HOME = 'C:\\Users\\rehou\\Documents\\apache-maven-3.9.0'
+        PATH = "${env.PATH};${env.JAVA_HOME}\\bin;${env.PYTHON_HOME};${env.MAVEN_HOME}\\bin"
     }
     stages {
         stage('Checkout') {
