@@ -27,9 +27,10 @@ pipeline {
 
   }
   environment {
-    JAVA_HOME = 'C:\\Program Files\\Java\\jdk1.8.0_202'
-    MAVEN_HOME = 'C:\\Users\\rehou\\Documents\\apache-maven-3.9.0\\bin'
-    PATH = "${env.PATH};${env.JAVA_HOME}\\bin;${env.MAVEN_HOME}"
+        JAVA_HOME = 'C:/Program Files/Java/jdk-17'
+
+        MAVEN_HOME = 'C:/Users/rehou/Documents/apache-maven-3.9.0/bin'
+        PATH = "${env.PATH};${env.JAVA_HOME}\\bin;${env.MAVEN_HOME}"
   }
   post {
     always {
