@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git(branch: 'main', url: 'https://github.com/hrhouma/hello-jenkins-mvn.git')
+        git(branch: 'main', url: 'https://github.com/Hanane-Chaouche/hello-jenkins-mvn.git')
       }
     }
 
